@@ -4,6 +4,10 @@ body {
     font-size: 16px;
 }
 
+.table-header {
+    text-align: center;
+}
+
 #csvinput {
     display: block;
     margin: 0 auto;
@@ -11,36 +15,13 @@ body {
 
 .data {
     background: white;
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
     margin-top: 40px;
 }
 
 .container {
     font-size: 40px;
-}
-
-.list-item-part {
-    width: 35%;
-}
-
-.list-item-operator {
-    width: 15%;
-    text-align: center;
-}
-
-.list-item-trial {
-    width: 15%;
-    text-align: center;
-}
-
-.list-item-value {
-    width: 35%;
-    text-align: right;
-}
-
-table {
-    width: 1000px;
 }
 
 th {
@@ -60,7 +41,7 @@ td {
     padding: 5px 20px;
     text-align: center;
     border: 2px solid white;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 tr {
@@ -69,4 +50,20 @@ tr {
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+table.list-table {
+    width: 800px;
+}
+
+table.anova-table {
+    width: 800px;
+}
+
+table.varcomp-table {
+    width: 800px;
+}
+
+table.studyvar-table {
+    width: 800px;
 }

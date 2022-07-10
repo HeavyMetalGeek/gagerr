@@ -645,7 +645,7 @@ function initSync(bytes) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('gagerr-a118c99e64e80f37_bg.wasm', import.meta.url);
+        input = new URL('gagerr-1d5b83b48661cbfb_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 

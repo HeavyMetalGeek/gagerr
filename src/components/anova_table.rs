@@ -122,6 +122,7 @@ impl Component for AnovaTable {
         html! {
             <>
                 <div class="data">
+                <div class="table-header"><h2>{"ANOVA"}</h2></div>
                     <table class="anova-table">
                         <tr>
                             <th>{"Source"}</th>

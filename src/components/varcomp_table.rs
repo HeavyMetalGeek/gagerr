@@ -60,7 +60,8 @@ impl Component for VarCompTable {
         html! {
             <>
                 <div class="data">
-                <table class="table">
+                <div class="table-header"><h2>{"Variance Components"}</h2></div>
+                <table class="varcomp-table">
                     <thead>
                         <tr>
                             <th>{"Source"}</th>

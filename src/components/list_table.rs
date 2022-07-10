@@ -114,7 +114,6 @@ impl Component for ListTable {
                     }
                 </table>
             </div>
-            <h1>{"ANOVA Table"}</h1>
             <AnovaTable
                 df_part={self.anova_data.df_part}
                 df_operator={self.anova_data.df_operator}
@@ -150,7 +149,7 @@ impl Component for ListTable {
                     }
                 }
                 stddev_repeatability={self.anova_data.ms_repeatability.sqrt()}
-                stddev_total_gagerr={self.anova_data.ms_repeatability + self.anova_data.varcomp_operator.unwrap_or(0.0)}
+                stddev_total_gagerr={self.anova_data.ms_repeatability.sqrt() + self.anova_data.varcomp_operator.unwrap_or(0.0).sqrt()}
                 stddev_total={self.anova_data.varcomp_total.sqrt()}
                 study_var={self.anova_data.study_variation}
             />

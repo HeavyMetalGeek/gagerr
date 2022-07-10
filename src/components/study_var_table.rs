@@ -42,7 +42,7 @@ impl Component for StudyVarTable {
             stddev_total_gagerr: 0.0,
             stddev_total: 0.0,
             stddev_repeatability: 0.0,
-            study_var: 0.0,
+            study_var: 5.15,
         }
     }
 
@@ -64,12 +64,13 @@ impl Component for StudyVarTable {
         html! {
             <>
                 <div class="data">
-                <table class="table">
+                <div class="table-header"><h2>{"Study Variation"}</h2></div>
+                <table class="studyvar-table">
                     <thead>
                         <tr>
                             <th>{"Source"}</th>
                             <th>{"StdDev (SD)"}</th>
-                            <th>{format!("Study Var ({:.4} x SD)", self.study_var)}</th>
+                            <th>{format!("Study Var ({:.2} x SD)", self.study_var)}</th>
                             <th>{"% Study Var"}</th>
                         </tr>
                     </thead>
