@@ -1,0 +1,72 @@
+body {
+    background: #555;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#csvinput {
+    display: block;
+    margin: 0 auto;
+}
+
+.data {
+    background: white;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.container {
+    font-size: 40px;
+}
+
+.list-item-part {
+    width: 35%;
+}
+
+.list-item-operator {
+    width: 15%;
+    text-align: center;
+}
+
+.list-item-trial {
+    width: 15%;
+    text-align: center;
+}
+
+.list-item-value {
+    width: 35%;
+    text-align: right;
+}
+
+table {
+    width: 1000px;
+}
+
+th {
+    background-clip: padding-box;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: #04AA6D;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+td {
+    background-clip: padding-box;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 12px;
+}
+
+tr {
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
