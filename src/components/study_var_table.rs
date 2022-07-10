@@ -69,7 +69,7 @@ impl Component for StudyVarTable {
                         <tr>
                             <th>{"Source"}</th>
                             <th>{"StdDev (SD)"}</th>
-                            <th>{"Study Var ({self.study_var:.4} x SD)"}</th>
+                            <th>{format!("Study Var ({:.4} x SD)", self.study_var)}</th>
                             <th>{"% Study Var"}</th>
                         </tr>
                     </thead>
