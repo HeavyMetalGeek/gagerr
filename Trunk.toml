@@ -1,0 +1,5 @@
+[build]
+target = "index.html"
+dist = "docs"
+public_url = "/gagerr/"
+filehash = true
